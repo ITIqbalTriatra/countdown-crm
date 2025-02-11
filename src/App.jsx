@@ -1,12 +1,13 @@
-import Countdown from './components/Countdown'
-import './index.css'
+import React from "react";
+import CarouselCountdown from "./components/CarouselCountdown";
+import "./index.css";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 to-purple-900 flex items-center justify-center p-4">
-      <Countdown />
+    <div className="min-h-screen flex items-center justify-center">
+      <CarouselCountdown />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

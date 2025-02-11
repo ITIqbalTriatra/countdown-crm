@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+.slick-slide>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-slide {
+    outline: none;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slick-slide:not(.slick-active) {
+    opacity: 0.5;
+    /* Transparansi untuk slide non-aktif */
+    transform: scale(0.9);
+    /* Skala lebih kecil untuk slide non-aktif */
+}
+
+.slick-list {
+    margin: 0 !important;
+    /* Hilangkan margin default */
+    padding: 0 !important;
+    /* Hilangkan padding default */
+}
